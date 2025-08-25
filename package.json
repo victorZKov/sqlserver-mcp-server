@@ -1,0 +1,38 @@
+{
+  "name": "@victorzcloud/sqlserver-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP Server para conectar con SQL Server",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "sqlserver",
+    "database",
+    "server",
+    "typescript",
+    "nodejs",
+    "ai"
+  ],
+  "author": "VictorZCloud",
+    "license": "MIT",
+  
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "mssql": "^10.0.2"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "sqlserver-mcp-server": "dist/index.js"
+  }
+}
