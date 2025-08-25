@@ -140,3 +140,5 @@ vite.config.ts.timestamp-*
 /.idea/.gitignore
 /.idea/encodings.xml
 /.idea/indexLayout.xml
+/package-lock.json
+/.idea/vcs.xml
